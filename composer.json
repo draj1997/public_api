@@ -1,0 +1,12 @@
+{
+  "name": "custom/public_info",
+  "description": "Custom Drupal module to fetch and display SpaceX public API launch data.",
+  "type": "drupal-custom-module",
+  "license": "GPL-2.0-or-later",
+  "autoload": {
+    "psr-4": {
+      "Drupal\\public_info\\": "src/"
+    }
+  },
+  "require": {}
+}

@@ -1,0 +1,10 @@
+public_info.settings:
+  type: config_object
+  label: "Public info settings"
+  mapping:
+    cache_ttl:
+      type: integer
+      label: "Cache TTL (minutes)"
+    launch_limit:
+      type: integer
+      label: "Number of launches to display"

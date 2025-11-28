@@ -1,0 +1,25 @@
+<div class="public-info-launches">
+  <ul>
+    {% for launch in launches %}
+      <li>
+        <strong>{{ launch.name }}</strong><br>
+        {{ 'Flight:'|t }} {{ launch.flight_number }}<br>
+        {{ 'Date:'|t }} {{ launch.date_utc }}<br>
+        {% if launch.links.patch.small %}
+          <img class="launch-icon" src="{{ launch.links.patch.small }}" alt="{{ launch.name }}" width="120">
+        {% endif %}
+        {% if launch.links.webcast %}
+          <br><a href="{{ launch.links.webcast }}" target="_blank" rel="noopener noreferrer">{{ 'Watch on YouTube'|t }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+
+  {% if refresh_url %}
+    <p><a href="{{ refresh_url }}" class="button">{{ 'Refresh Now'|t }}</a></p>
+  {% endif %}
+
+  <div class="pager">
+    {{ pager }}
+  </div>
+</div>

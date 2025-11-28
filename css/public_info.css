@@ -1,0 +1,34 @@
+.public-info-launches {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.public-info-launches ul {
+  list-style: none;
+  padding: 0;
+}
+
+.public-info-launches li {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.public-info-launches img {
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.public-info-launches ul li {
+  text-align: center;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.launch-icon {
+  display: block;
+  margin: 20px auto;
+  border-radius: 6px;
+}

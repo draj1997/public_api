@@ -1,0 +1,24 @@
+public_info.page:
+  path: "/public-info"
+  defaults:
+    _controller: '\Drupal\public_info\Controller\PublicInfoController::view'
+    _title: "SpaceX Launches"
+  requirements:
+    _permission: "access public info page"
+
+public_info.settings:
+  path: "/admin/config/services/public-info"
+  defaults:
+    _form: '\Drupal\public_info\Form\PublicInfoSettingsForm'
+    _title: "Public Info Settings"
+  requirements:
+    _permission: "administer site configuration"
+
+public_info.refresh:
+  path: "/public-info/refresh"
+  defaults:
+    _controller: '\Drupal\public_info\Controller\PublicInfoController::refresh'
+    _title: "Refresh SpaceX Cache"
+  requirements:
+    _permission: "access public info page"
+    _csrf_token: "TRUE"

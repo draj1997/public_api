@@ -1,0 +1,13 @@
+public_info.settings_link:
+  title: "Public Info Settings"
+  description: "Configure cache TTL and number of launches for SpaceX data."
+  parent: system.admin_config_services
+  route_name: public_info.settings
+  weight: 10
+
+public_info.page_link:
+  title: "SpaceX Launches"
+  description: "View latest SpaceX launch information."
+  parent: system.admin_config
+  route_name: public_info.page
+  weight: 0

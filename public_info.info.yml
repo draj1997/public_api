@@ -1,0 +1,5 @@
+name: Public Info
+type: module
+description: "Fetches and displays SpaceX public API launch data."
+package: Custom
+core_version_requirement: ^10 || ^11
